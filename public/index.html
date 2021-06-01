@@ -29,6 +29,17 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <% if (BOS3D) { %>
+    <link rel="stylesheet" href="http://bos3d.bimwinner.com/static/UI/latest/BOS3DUI.min.css"/>
+    <script src="http://bos3d.bimwinner.com/static/UI/latest/BOS3DUI.min.js"></script>
+    <script src="http://bos3d.bimwinner.com/static/latest/BOS3D.min.js"></script>
+    <% } %>
+
+
+    <% if (BOSGEO) { %>
+    <h2>使用了 BOSGEO </h2>
+    <% } %>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
